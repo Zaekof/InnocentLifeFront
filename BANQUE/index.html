@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banque UI</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/styles.css">
+    <!--JQUERY-->
+    <script src="assets/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="row">
+            <h2 class="solde">VOTRE BALANCE : <span>0</span>€</h2>
+            <div class="flex-item banque">
+                <nav class="menu">
+                    <ul class="menu">
+                        <li class="menu0">DÉPÔT</li>
+                        <li class="menu1">RETRAIT</li>
+                        <li class="menu2">VIREMENT</li>
+                    </ul>
+                </nav>
+                <div class="bloc" id="bloc0" style="display: none">
+                    <header>
+                        <h1>DEPOSER DE L'ARGENT</h1>
+                    </header>
+                    <main>
+                        <input type="number" name="depot_input" id="depot_input" placeholder="0€">
+                    </main>
+                    <footer>
+                        <button type="submit" id="depot_button"><h3>ENVOYER</h3></button>
+                    </footer>
+                </div>
+                <div class="bloc" id="bloc1" style="display: none">
+                    <header>
+                        <h1>RETIRER DE L'ARGENT</h1>
+                    </header>
+                    <main>
+                        <input type="number" name="retrait_input" id="retrait_input" placeholder="0€">
+                    </main>
+                    <footer>
+                        <button type="submit" id="retrait_button"><h3>RETIRER</h3></button>
+                    </footer>
+                </div>
+                <div class="bloc" id="bloc2" style="display: none">
+                    <header>
+                        <h1>VIRER DE L'ARGENT</h1>
+                    </header>
+                    <main>
+                        <input type="number" name="virement_input" id="virement_input" placeholder="0€">
+                    </main>
+                    <footer>
+                        <button type="submit" id="destinataire_button"><h3>DESTINATAIRE</h3></button>
+                    </footer>
+                </div>
+                <div class="destinataire" style="display: none">
+                    <header>
+                        <h1>CHOISISEZ UN DESTINATAIRE</h1>
+                    </header>
+                    <main class="destinataires">
+                        <ul>
+                            <li><label><input type="radio" name="destinataire" value="Player1" />Player 1</label></li>
+                            <li><label><input type="radio" name="destinataire" value="Player2" />Player 2</label></li>
+                            <li><label><input type="radio" name="destinataire" value="Player3" />Player 3</label></li>
+                            <li><label><input type="radio" name="destinataire" value="Player4" />Player 4</label></li>
+                            <li><label><input type="radio" name="destinataire" value="Player5" />Player 5</label></li>
+                            <li><label><input type="radio" name="destinataire" value="Player6" />Player 6</label></li>
+                            <li><label><input type="radio" name="destinataire" value="Player7" />Player 7</label></li>
+                            <li><label><input type="radio" name="destinataire" value="Player8" />Player 8</label></li>
+                        </ul>
+                    </main>
+                    <footer>
+                        <button type="button" id="virement_button"><h3>ENVOYER</h3></button>
+                        <button type="reset" id="virement_annuler_button"><h3>ANNULER</h3></button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--PERSO JS-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>
