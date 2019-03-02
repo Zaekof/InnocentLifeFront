@@ -1,0 +1,212 @@
+*, *::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	outline: 0;
+}
+
+html, body {
+	height: 100%;
+	
+	background: transparent;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	overflow: hidden;
+}
+body {
+    margin: 0;
+}
+
+.flex-container {
+	height: 100%;
+	
+	padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .row {
+      width: auto;
+  }
+    .flex-item {
+        color: white;
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+	}
+	
+.atm {
+	width: 800px;
+	height: 650px;
+
+	background: rgb(100, 149, 237);
+}
+	.atm header {
+		height: 200px;
+		width: 100%;
+
+		background: rgb(52, 93, 170);
+	}
+		.atm header .welcome {
+			width: 100%;
+			height: 30px;
+
+			background: rgb(44, 81, 150);
+		}
+			.atm header .welcome h3 {
+				font-size: 1.3rem;
+				line-height: 30px;
+				text-align: right;
+				padding: 0 20px 0 0;
+			}
+		.atm header .logo {
+			width: 40%;
+			height: 120px;
+
+			float: left;
+			background: rgb(235, 232, 232);
+		}
+			.atm header .logo img {
+				width: 50%;
+				height: 100%;
+			}
+		.atm header .title {
+			width: 60%;
+			height: 120px;
+
+			float: right;
+			color: rgb(36, 36, 36);
+			background: rgb(235, 232, 232);
+		}
+			.atm header .title h2 {
+				font-size: 2rem;
+				line-height: 120px;
+			}
+		.atm header .subtitle {
+			width: 100%;
+			height: 50px;
+
+			float: left;
+		}
+			.atm header .subtitle h2 {
+				font-size: 1.3rem;
+				line-height: 50px;
+			}
+	.atm nav {
+		height: calc(100% - 200px);
+		width: 100%;
+
+		background: rgb(100, 149, 237);
+	}
+		.atm nav .arrow {
+			width: calc(50%);
+			height: calc(100% / 2);
+
+			float: left;
+		}
+		.atm nav .arrow button {
+			width: 100%;
+			height: 100%;
+
+			float: left;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 1.5rem;
+			font-weight: bold;
+			color: rgb(36, 36, 36);
+		}
+		.atm nav .arrow:nth-child(1) button span,
+		.atm nav .arrow:nth-child(3) button span {
+			float: left;
+			padding: 0 0 0 30px;
+			line-height: 115px;
+		}
+		.atm nav .arrow:nth-child(1) img,
+		.atm nav .arrow:nth-child(3) img {
+			float: left;
+			margin: 20px 0 0 20px;
+			height: 70px;
+		}
+		.atm nav .arrow:nth-child(2) img,
+		.atm nav .arrow:nth-child(4) img {
+			float: right;
+			margin: 20px 20px 0 0;
+			height: 70px;
+		}
+		.atm nav .arrow:nth-child(2) button span,
+		.atm nav .arrow:nth-child(4) button span {
+			float: right;
+			line-height: 115px;
+			padding: 0 30px 0 0;
+		}
+
+
+.atm .bloc {
+	height: calc(100% - 200px);
+	width: 100%;
+
+	padding: 0;
+	background: rgb(100, 149, 237);
+}
+	.bloc main {
+		width: 100%;
+		height: calc(100% - 70px);
+	}
+		.bloc main input {
+			width: 100%;
+			height: 100px;
+
+			text-align: center;
+			color: #fff;
+			background: transparent;
+			border: none;
+			
+			font-size: 100px;
+			margin: 20% 0 0 0;
+			
+			padding: 0 auto;
+		}
+		.bloc main input[type=number],
+		.bloc main input::-webkit-inner-spin-button,
+		.bloc main input::-webkit-outer-spin-button { 
+			-webkit-appearance: none;
+			-moz-appearance: textfield;
+		}
+		.bloc main input::-webkit-input-placeholder {
+			color: #fff
+		}
+		.bloc main input:-ms-input-placeholder {
+			color: #fff
+		}
+		.bloc main input::placeholder {
+			color: #fff
+		}
+	.bloc footer {
+		width: 100%;
+		height: 70px;
+
+		float: left;
+		background: rgb(52, 93, 170);
+	}
+		footer button {
+			width: 50%;
+			height: 70px;
+
+			cursor: pointer;
+			color: #fff;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 1.5rem;
+			font-weight: bold;
+			color: rgb(36, 36, 36);
+			float: left;
+		}
+	#bloc0 main h5{
+		line-height: 380px;
+		font-size: 1.3rem;
+	}
+	#bloc0 footer {
+		padding: 0 0 0 calc(400px - (280px/2));
+	}
