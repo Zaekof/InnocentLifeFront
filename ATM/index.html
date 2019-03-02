@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ATM UI</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/styles.css">
+    <!--JQUERY-->
+    <script src="assets/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <!-- Audio de l'atm -->
+    <audio id="atm_bip">
+        <source src="assets/atm_bip.mp3" type="audio/mp3">
+    </audio>
+    <div class="flex-container">
+        <div class="row">
+            <div class="flex-item atm">
+                <header>
+                    <div class="welcome">
+                        <h3>Bienvenue <span>Username</span>!</h3>
+                    </div>
+                    <div class="logo">
+                        <img src="assets/innocent-life.png" alt="logo">
+                    </div>
+                    <div class="title">
+                        <h2>INNOCENT LIFE ATM</h2>
+                    </div>
+                    <div class="subtitle">
+                        <h2>VEUILLEZ CHOISIR UNE OPÉRATION</h2>
+                    </div>
+                </header>
+                <nav id="menu" style="display: none">
+                    <div class="arrow">
+                        <button class="menu0"><img src="assets/left-arrow.png" alt=""><span>SOLDE</span></button>
+                    </div>
+                    <div class="arrow">
+                        <button class="menu1"><img src="assets/right-arrow.png" alt=""><span>RETRAIT</span></button>
+                    </div>
+                    <div class="arrow">
+                        <button class="menu2"><img src="assets/left-arrow.png" alt=""><span>DÉPOT</span></button>
+                    </div>
+                    <div class="arrow">
+                        <button class="menu3">QUITTER</button>
+                    </div>
+                </nav>
+                <div class="bloc" id="bloc0" style="display: none">
+                    <main>
+                        <h5 class="solde">SOLDE COMPTE COURANT : <span>0</span>€</h5>
+                    </main>
+                    <footer>
+                        <button type="reset" id="menu_retour_button"><h3>RETOUR</h3></button>
+                    </footer>
+                </div>
+
+                <div class="bloc" id="bloc1" style="display: none">
+                    <main>
+                        <input type="number" name="retrait_input" id="retrait_input" placeholder="0€">
+                    </main>
+                    <footer>
+                        <button type="reset" id="menu_retour_button"><h3>RETOUR</h3></button>
+                        <button type="submit" id="retrait_button"><h3>RETIRER</h3></button>
+                    </footer>
+                </div>
+                <div class="bloc" id="bloc2" style="display: none">
+                    <main>
+                        <input type="number" name="depot_input" id="depot_input" placeholder="0€">
+                    </main>
+                    <footer>
+                        <button type="reset" id="menu_retour_button"><h3>RETOUR</h3></button>
+                        <button type="submit" id="depot_button"><h3>DÉPOSER</h3></button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--PERSO JS-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>
